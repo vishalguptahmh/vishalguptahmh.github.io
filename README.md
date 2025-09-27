@@ -1,9 +1,9 @@
 
 ### Hi there, I'm Vishal Gupta  👋
 
-## I'm a Staff Software developer!
+## I'm a Staff Software Engineer!
 - 📱 I’m currently working on a Android,iOS, Backend as fulltime
-- 🌱 I’m currently learning deno and c#
+- 🌱 I’m currently learning Agentic AI
 - 👯 I’m looking to collaborate with other content creators
 - 🥅 Want to contribute more to Open Source projects
 
