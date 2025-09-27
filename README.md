@@ -31,6 +31,7 @@
 - [Git Helper](https://github.com/vishalguptahmh/githelper)
 - [PowerShell helper](https://github.com/vishalguptahmh/Powershell-helper)
 - [Data structure](https://github.com/vishalguptahmh/datastructure)
+- [Complete knowledge for Amazon, Cloud computing, AI, Programming questions , Clean Architecture, HLD, LLD](https://github.com/vishalguptahmh/knowledgeBase)
 
 ### Connect with me:
 
@@ -105,7 +106,7 @@ src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350
 
 
 
-<img align="left" alt="Vishalguptahmh" src="https://github-readme-stats.vercel.app/api?username=vishalguptahmh&show_icons=true&hide_border=true" />
+<img align="left" alt="Vishalguptahmh" src="https://github-readme-stats.vercel.app/api?username=vishalguptahmh&show_icons=true&hide_border=true&commits_year=2025" />
 
 
 <!--
