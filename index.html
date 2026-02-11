@@ -1,131 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vishal Gupta - Staff Software Engineer. Android, iOS, Backend developer specializing in cross-platform development and Agentic AI.">
+  <title>Vishal Gupta | Staff Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'] }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .text-balance { text-wrap: balance; }
+    .gradient-mesh { background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(16, 185, 129, 0.15), transparent), radial-gradient(ellipse 60% 40% at 100% 0%, rgba(16, 185, 129, 0.08), transparent), radial-gradient(ellipse 50% 30% at 0% 50%, rgba(16, 185, 129, 0.05), transparent); }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 antialiased font-sans">
+  <!-- Sticky Navigation -->
+  <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-xl border-b border-slate-800/50">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="text-lg font-semibold tracking-tight text-slate-100 hover:text-emerald-400 transition-colors">Vishal Gupta</a>
+      <button id="menu-toggle" class="md:hidden p-2.5 rounded-lg hover:bg-slate-800/80 transition-colors focus:outline-none focus:ring-2 focus:ring-emerald-400/50" aria-label="Toggle menu">
+        <i data-lucide="menu" class="w-5 h-5"></i>
+      </button>
+      <ul id="nav-links" class="hidden md:flex items-center gap-1">
+        <li><a href="#hero" class="px-3 py-2 text-sm font-medium text-slate-400 hover:text-emerald-400 transition-colors rounded-md hover:bg-slate-800/50">Home</a></li>
+        <li><a href="#about" class="px-3 py-2 text-sm font-medium text-slate-400 hover:text-emerald-400 transition-colors rounded-md hover:bg-slate-800/50">About</a></li>
+        <li><a href="#skills" class="px-3 py-2 text-sm font-medium text-slate-400 hover:text-emerald-400 transition-colors rounded-md hover:bg-slate-800/50">Skills</a></li>
+        <li><a href="#projects" class="px-3 py-2 text-sm font-medium text-slate-400 hover:text-emerald-400 transition-colors rounded-md hover:bg-slate-800/50">Projects</a></li>
+        <li><a href="#contact" class="px-3 py-2 text-sm font-medium text-slate-400 hover:text-emerald-400 transition-colors rounded-md hover:bg-slate-800/50">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-slate-800/50 bg-slate-900/50">
+      <ul class="px-6 py-4 space-y-1">
+        <li><a href="#hero" class="block py-3 text-slate-400 hover:text-emerald-400 hover:bg-slate-800/30 rounded-lg px-3 -mx-3 transition-colors">Home</a></li>
+        <li><a href="#about" class="block py-3 text-slate-400 hover:text-emerald-400 hover:bg-slate-800/30 rounded-lg px-3 -mx-3 transition-colors">About</a></li>
+        <li><a href="#skills" class="block py-3 text-slate-400 hover:text-emerald-400 hover:bg-slate-800/30 rounded-lg px-3 -mx-3 transition-colors">Skills</a></li>
+        <li><a href="#projects" class="block py-3 text-slate-400 hover:text-emerald-400 hover:bg-slate-800/30 rounded-lg px-3 -mx-3 transition-colors">Projects</a></li>
+        <li><a href="#contact" class="block py-3 text-slate-400 hover:text-emerald-400 hover:bg-slate-800/30 rounded-lg px-3 -mx-3 transition-colors">Contact</a></li>
+      </ul>
+    </div>
+  </header>
 
-### Hi there, I'm Vishal Gupta  👋
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex flex-col items-center justify-center px-6 text-center gradient-mesh overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent pointer-events-none"></div>
+      <div class="relative">
+        <p class="text-sm font-medium text-emerald-400/90 tracking-widest uppercase mb-4">Staff Software Engineer</p>
+        <h1 class="text-5xl md:text-7xl font-bold text-slate-50 tracking-tight mb-6">
+          Vishal Gupta
+        </h1>
+        <p class="text-lg md:text-xl text-slate-400 max-w-xl mx-auto mb-12 leading-relaxed">
+          Building production apps across Android, iOS, and Backend. Exploring Agentic AI and contributing to open source.
+        </p>
+        <a href="#projects" class="inline-flex items-center gap-2 px-8 py-3.5 bg-emerald-500 text-white font-semibold rounded-lg hover:bg-emerald-400 hover:shadow-lg hover:shadow-emerald-500/25 hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-950">
+          View Projects
+          <i data-lucide="arrow-down" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </section>
 
-## I'm a Software developer!
-- 📱 I’m currently working on a Android as fulltime
-- 🌱 I’m currently learning ios,deno,node
-- 👯 I’m looking to collaborate with other content creators
-- 🥅 2020 Goals: Contribute more to Open Source projects
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 bg-slate-900/50 border-y border-slate-800/50">
+      <div class="max-w-3xl mx-auto">
+        <span class="text-xs font-semibold text-emerald-400 tracking-widest uppercase">About</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-50 mt-2 mb-8">Professional Summary</h2>
+        <p class="text-slate-400 text-lg md:text-xl leading-relaxed">
+          Staff Software Engineer with a strong focus on <span class="text-emerald-400 font-medium">cross-platform development</span> — shipping production apps on Android, iOS, and the Backend. Currently diving deep into Agentic AI while contributing to open source and collaborating with fellow creators.
+        </p>
+      </div>
+    </section>
 
-### Some Android demo work:
-- <a href="https://github.com/vishalguptahmh/Android-Cheat-Sheet" target="_blank">Android helping snippets</a>
-- <a href="https://github.com/vishalguptahmh/gradle-things" target="_blank">Gradle helping snippets</a>
-- <a href="https://play.google.com/store/apps/details?id=com.moode&hl=en_IN" target="_blank">Talentopedia App</a>
-- <a href="https://github.com/vishalguptahmh/android_sdk_sample" target="_blank">Android Lib example</a>
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6">
+      <div class="max-w-6xl mx-auto">
+        <span class="text-xs font-semibold text-emerald-400 tracking-widest uppercase">Expertise</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-50 mt-2 mb-16">Skills & Technologies</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="group p-6 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-emerald-500/30 hover:bg-slate-800/60 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-emerald-500/5">
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-5 group-hover:bg-emerald-500/20 transition-colors">
+              <i data-lucide="smartphone" class="w-7 h-7 text-emerald-400"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-100 mb-2">Android / Kotlin</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">Native Android development with Kotlin and Gradle.</p>
+          </div>
+          <div class="group p-6 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-emerald-500/30 hover:bg-slate-800/60 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-emerald-500/5">
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-5 group-hover:bg-emerald-500/20 transition-colors">
+              <i data-lucide="code" class="w-7 h-7 text-emerald-400"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-100 mb-2">Web Development</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">HTML, CSS, JavaScript, React, Node.js, and Deno.</p>
+          </div>
+          <div class="group p-6 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-emerald-500/30 hover:bg-slate-800/60 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-emerald-500/5">
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-5 group-hover:bg-emerald-500/20 transition-colors">
+              <i data-lucide="apple" class="w-7 h-7 text-emerald-400"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-100 mb-2">iOS</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">iOS development and cross-platform tooling.</p>
+          </div>
+          <div class="group p-6 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-emerald-500/30 hover:bg-slate-800/60 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-emerald-500/5">
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-5 group-hover:bg-emerald-500/20 transition-colors">
+              <i data-lucide="database" class="w-7 h-7 text-emerald-400"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-100 mb-2">Backend</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">SQL, MySQL, MongoDB, and server-side development.</p>
+          </div>
+          <div class="group p-6 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-emerald-500/30 hover:bg-slate-800/60 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-emerald-500/5">
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-5 group-hover:bg-emerald-500/20 transition-colors">
+              <i data-lucide="git-branch" class="w-7 h-7 text-emerald-400"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-100 mb-2">Git & DevOps</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">Version control, CI/CD, and developer workflows.</p>
+          </div>
+          <div class="group p-6 rounded-2xl bg-slate-800/40 border border-slate-700/50 hover:border-emerald-500/30 hover:bg-slate-800/60 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl hover:shadow-emerald-500/5">
+            <div class="w-14 h-14 rounded-xl bg-emerald-500/10 flex items-center justify-center mb-5 group-hover:bg-emerald-500/20 transition-colors">
+              <i data-lucide="sparkles" class="w-7 h-7 text-emerald-400"></i>
+            </div>
+            <h3 class="text-lg font-semibold text-slate-100 mb-2">Agentic AI</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">Exploring AI agents and intelligent automation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-### Some Web demo work:
-- [Search playstore app and api](https://playstorefetch.herokuapp.com/)
-- <a href="https://github.com/vishalguptahmh/web-developer-cheatsheet" target="_blank">Web helping snippets</a>
-- <a href="https://vishalguptahmh.github.io/web-demo2-animation" target="_blank">Web Animation - card layout dangling</a>
-- <a href="https://vishalguptahmh.github.io/web-animation-demo3/" target="_blank">Web Animation - remove blur from image as mouse moves </a>
-- <a href="https://vishalguptahmh.github.io/demo1" target="_blank">Website Demo work</a>
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 bg-slate-900/50 border-y border-slate-800/50">
+      <div class="max-w-6xl mx-auto">
+        <span class="text-xs font-semibold text-emerald-400 tracking-widest uppercase">Portfolio</span>
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-50 mt-2 mb-16">Featured Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Project 1 -->
+          <article class="group rounded-2xl overflow-hidden bg-slate-800/40 border border-slate-700/50 hover:border-emerald-500/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-emerald-500/5">
+            <a href="https://github.com/vishalguptahmh/Android-Cheat-Sheet" target="_blank" rel="noopener noreferrer" class="block">
+              <div class="relative h-52 overflow-hidden">
+                <img src="https://placehold.co/600x320/0f172a/34d399?text=Android" alt="Android Cheat Sheet" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+                  <span class="text-slate-400 text-xs font-medium">Open source</span>
+                  <i data-lucide="external-link" class="w-4 h-4 text-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-semibold text-slate-100 mb-2 group-hover:text-emerald-400 transition-colors">Android Cheat Sheet</h3>
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Kotlin</span>
+                  <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Android</span>
+                  <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Gradle</span>
+                </div>
+                <p class="text-slate-500 text-sm leading-relaxed">Android helping snippets and development shortcuts.</p>
+              </div>
+            </a>
+          </article>
 
-### Some iOS demo work:
-- <a href="https://github.com/vishalguptahmh/ios_cheat_sheet" target="_blank">iOS helping snippets</a>
+          <!-- Project 2 -->
+          <article class="group rounded-2xl overflow-hidden bg-slate-800/40 border border-slate-700/50 hover:border-emerald-500/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-emerald-500/5">
+            <a href="https://github.com/vishalguptahmh/web_ideabox" target="_blank" rel="noopener noreferrer" class="block">
+              <div class="relative h-52 overflow-hidden">
+                <img src="https://placehold.co/600x320/0f172a/34d399?text=Idea+Box" alt="Idea Box" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+                  <span class="text-slate-400 text-xs font-medium">Web app</span>
+                  <i data-lucide="external-link" class="w-4 h-4 text-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-semibold text-slate-100 mb-2 group-hover:text-emerald-400 transition-colors">Idea Box</h3>
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">JavaScript</span>
+                  <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Web</span>
+                </div>
+                <p class="text-slate-500 text-sm leading-relaxed">Web app for capturing and organizing ideas.</p>
+              </div>
+            </a>
+          </article>
 
-### Others
-- [Regular expression guide](https://github.com/vishalguptahmh/Regex-RegularExpression/blob/main/README.md)
-- [Git Helper](https://github.com/vishalguptahmh/githelper)
-- [PowerShell helper](https://github.com/vishalguptahmh/Powershell-helper)
+          <!-- Project 3 -->
+          <article class="group rounded-2xl overflow-hidden bg-slate-800/40 border border-slate-700/50 hover:border-emerald-500/30 transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl hover:shadow-emerald-500/5">
+            <a href="https://github.com/vishalguptahmh/knowledgeBase" target="_blank" rel="noopener noreferrer" class="block">
+              <div class="relative h-52 overflow-hidden">
+                <img src="https://placehold.co/600x320/0f172a/34d399?text=Knowledge+Base" alt="Knowledge Base" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-80"></div>
+                <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+                  <span class="text-slate-400 text-xs font-medium">Resource hub</span>
+                  <i data-lucide="external-link" class="w-4 h-4 text-emerald-400 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-lg font-semibold text-slate-100 mb-2 group-hover:text-emerald-400 transition-colors">Knowledge Base</h3>
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Architecture</span>
+                  <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">AI</span>
+                  <span class="px-2.5 py-1 text-xs font-medium rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Cloud</span>
+                </div>
+                <p class="text-slate-500 text-sm leading-relaxed">Amazon, Cloud, AI, Clean Architecture, HLD, LLD resources.</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
 
-### Connect with me:
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6">
+      <div class="max-w-xl mx-auto">
+        <!-- <span class="text-xs font-semibold text-emerald-400 tracking-widest uppercase">Get in touch</span> -->
+        <!-- <h2 class="text-3xl md:text-4xl font-bold text-slate-50 mt-2 mb-12">Contact</h2> -->
+        <!-- Update mailto: with your email, or use Formspree: action="https://formspree.io/f/YOUR_ID" method="post" -->
+        <!-- <form action="mailto:your.email@example.com" method="get" enctype="text/plain" class="space-y-5">
+          <div>
+            <label for="name" class="block text-sm font-medium text-slate-400 mb-1.5">Name</label>
+            <input type="text" id="name" name="name" required class="w-full px-4 py-3.5 rounded-xl bg-slate-800/60 border border-slate-700/50 text-slate-100 placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-emerald-400/50 focus:border-emerald-500/50 transition-all" placeholder="Your name">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-slate-400 mb-1.5">Email</label>
+            <input type="email" id="email" name="email" required class="w-full px-4 py-3.5 rounded-xl bg-slate-800/60 border border-slate-700/50 text-slate-100 placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-emerald-400/50 focus:border-emerald-500/50 transition-all" placeholder="your@email.com">
+          </div>
+          <div>
+            <label for="message" class="block text-sm font-medium text-slate-400 mb-1.5">Message</label>
+            <textarea id="message" name="body" rows="5" required class="w-full px-4 py-3.5 rounded-xl bg-slate-800/60 border border-slate-700/50 text-slate-100 placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-emerald-400/50 focus:border-emerald-500/50 transition-all resize-none" placeholder="Your message"></textarea>
+          </div>
+          <button type="submit" class="w-full px-8 py-3.5 bg-emerald-500 text-white font-semibold rounded-xl hover:bg-emerald-400 hover:shadow-lg hover:shadow-emerald-500/25 hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-950 flex items-center justify-center gap-2">
+            <i data-lucide="send" class="w-4 h-4"></i>
+            Send Message
+          </button>
+        </form> -->
+        <div class="mt-12 pt-12 border-t border-slate-800/50">
+          <p class="text-sm text-slate-500 mb-6 text-center">Or connect with me on</p>
+          <div class="flex justify-center gap-4">
+            <a href="https://www.linkedin.com/in/vishalguptahmh/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-800/60 border border-slate-700/50 text-slate-400 hover:text-emerald-400 hover:border-emerald-500/30 hover:bg-slate-800/80 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-400/50" aria-label="LinkedIn">
+              <i data-lucide="linkedin" class="w-5 h-5"></i>
+              <span class="text-sm font-medium">LinkedIn</span>
+            </a>
+            <a href="https://github.com/vishalguptahmh" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-800/60 border border-slate-700/50 text-slate-400 hover:text-emerald-400 hover:border-emerald-500/30 hover:bg-slate-800/80 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-emerald-400/50" aria-label="GitHub">
+              <i data-lucide="github" class="w-5 h-5"></i>
+              <span class="text-sm font-medium">GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<p align="center">
- <a href="https://www.linkedin.com/in/vishalguptahmh/" target="_blank">
-<img align="left" alt="vishalguptahmh | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />
-</a>
- 
-<br />
+  <footer class="py-10 px-6 border-t border-slate-800/50">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-slate-600 text-sm">© 2025 Vishal Gupta</p>
+      <div class="flex items-center gap-6 text-sm text-slate-600">
+        <a href="https://www.linkedin.com/in/vishalguptahmh/" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors">LinkedIn</a>
+        <a href="https://github.com/vishalguptahmh" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors">GitHub</a>
+      </div>
+    </div>
+  </footer>
 
-### Languages and Tools:
+  <script>
+    lucide.createIcons();
 
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelectorAll('#mobile-menu a');
 
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      const icon = menuToggle.querySelector('i');
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      icon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
+      lucide.createIcons();
+    });
 
-<img align="left" alt="Android Studio Code" width="26px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Android_robot.svg/1200px-Android_robot.svg.png" />
-
-<img align="left" alt="Visual Studio Code" width="26px" src="https://www.edureka.co/blog/wp-content/uploads/2019/06/Kotlin.png" />
-
-<img align="left" alt="Visual Studio Code" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
-
-<img align="left" alt="HTML5" width="26px" 
-src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
-
-<img align="left" alt="CSS3" width="26px" 
-src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
-
-<!-- <img align="left" alt="Sass" width="26px" 
-src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png" /> -->
-
-<img align="left" alt="JavaScript" width="26px" 
-src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
-
-<img align="left" alt="React" width="26px"
- src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
-
-<!-- <img align="left" alt="Gatsby" width="26px" 
-src="https://raw.githubusercontent.com/github/explore/e94815998e4e0713912fed477a1f346ec04c3da2/topics/gatsby/gatsby.png" /> -->
-
-<!-- <img align="left" alt="GraphQL" width="26px" 
-src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/graphql/graphql.png" /> -->
-
-<img align="left" alt="Node.js" width="26px" 
-src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" />
-
-<img align="left" alt="Deno" width="26px" 
-src="https://raw.githubusercontent.com/github/explore/361e2821e2dea67711cde99c9c40ed357061cf27/topics/deno/deno.png" />
-
-<img align="left" alt="SQL" width="26px" 
-src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png" />
-
-<img align="left" alt="MySQL" width="26px" 
-src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png" />
-
-<img align="left" alt="MongoDB" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png" />
-
-<img align="left" alt="Git" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
-
-<img align="left" alt="GitHub" width="26px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
-
-<img align="left" alt="terminal" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />
-
-
-<img align="left" alt="terminal" width="26px" src="https://avatars.githubusercontent.com/u/333591?s=200&v=4" />
-
-<img align="left" alt="ios" width="26px" src="https://cdn.iconscout.com/icon/free/png-512/ios-apple-572947.png" />
-
-
-<br />
-<br />
-
-
-
-
-
-<img align="left" alt="Vishalguptahmh" src="https://github-readme-stats.vercel.app/api?username=vishalguptahmh&show_icons=true&hide_border=true" />
-
-
-<!--
-**vishalguptahmh/vishalguptahmh** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-
-<!--### 📺 Latest YouTube Videos -->
-<!-- YOUTUBE:START -->
-<!--
-- [Next Level GitHub Profile README (NEW) | How To Create An Amazing Profile ReadMe With GitHub Actions](https://www.youtube.com/watch?v=ECuqb5Tv9qI)
-- [There's more to CONSOLE than .log( ) | Things you didn't know console could do!!](https://www.youtube.com/watch?v=_-bHhEGcDiQ)
-- [Simple React.js User Login Authentication | Auth0](https://www.youtube.com/watch?v=MqczHS3Z2bc)
-- [Top 10 VS Code Updates You Don't Know About!! (July 2020)](https://www.youtube.com/watch?v=WHBQ1szkhtI)
-- [localStorage Dark/Light Mode Theme Toggle (CSS/JavaScript) | UI Design](https://www.youtube.com/watch?v=_raOFZAYXD4)
--->
-<!-- YOUTUBE:END --> 
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        const icon = menuToggle.querySelector('i');
+        icon.setAttribute('data-lucide', 'menu');
+        lucide.createIcons();
+      });
+    });
+  </script>
+</body>
+</html>
