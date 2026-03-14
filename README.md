@@ -2,6 +2,7 @@
 
 [![GitHub](https://img.shields.io/badge/GitHub-vishalguptahmh-181717?style=flat&logo=github)](https://github.com/vishalguptahmh)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-vishalguptahmh-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/vishalguptahmh/)
+[![SecureFlag](https://img.shields.io/badge/SecureFlag-Verified-0A66C2?style=flat&logo=checkmarx&logoColor=white)](https://www.secureflag.com/b?c43e44c8-7404-42a4-a403-ff83c317034a)
 
 Staff Software Engineer shipping production apps across Android, iOS, and Backend. Exploring Agentic AI and contributing to open source.
 
