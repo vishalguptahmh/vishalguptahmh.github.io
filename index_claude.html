@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vishal Gupta - Staff Software Engineer. Android, iOS, Backend developer specializing in cross-platform development, security, and IAM solutions.">
+  <title>Vishal Gupta | Staff Software Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            canvas: '#faf9f5',
+            'surface-soft': '#f5f0e8',
+            'surface-card': '#efe9de',
+            'surface-dark': '#181715',
+            'surface-dark-elev': '#252320',
+            ink: '#141413',
+            body: '#3d3d3a',
+            muted: '#6c6a64',
+            'muted-soft': '#8e8b82',
+            primary: '#cc785c',
+            'primary-active': '#a9583e',
+            hairline: '#e6dfd8',
+            'on-dark': '#faf9f5',
+            'on-dark-soft': '#a09d96',
+            'accent-teal': '#5db8a6',
+            success: '#5db872',
+          },
+          fontFamily: {
+            display: ['Cormorant Garamond', 'serif'],
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          letterSpacing: {
+            tightest: '-0.02em',
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .text-balance { text-wrap: balance; }
+  </style>
+</head>
+<body class="bg-canvas text-body antialiased font-sans">
+  <header class="sticky top-0 z-50 bg-canvas/80 backdrop-blur-xl border-b border-hairline">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between h-16">
+      <a href="#" class="flex items-center gap-2 text-lg font-medium tracking-tight text-ink hover:text-primary transition-colors">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-ink">
+          <path d="M8 0L8 16M0 8L16 8M3.5 3.5L12.5 12.5M12.5 3.5L3.5 12.5" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+        <span>Vishal Gupta</span>
+      </a>
+      <button id="menu-toggle" class="md:hidden p-2.5 rounded-lg hover:bg-surface-soft transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50" aria-label="Toggle menu">
+        <i data-lucide="menu" class="w-5 h-5 text-ink"></i>
+      </button>
+      <ul id="nav-links" class="hidden md:flex items-center gap-1">
+        <li><a href="#hero" class="px-3 py-2 text-sm font-medium text-muted hover:text-primary transition-colors rounded-lg hover:bg-surface-soft">Home</a></li>
+        <li><a href="#about" class="px-3 py-2 text-sm font-medium text-muted hover:text-primary transition-colors rounded-lg hover:bg-surface-soft">About</a></li>
+        <li><a href="#experience" class="px-3 py-2 text-sm font-medium text-muted hover:text-primary transition-colors rounded-lg hover:bg-surface-soft">Experience</a></li>
+        <li><a href="#skills" class="px-3 py-2 text-sm font-medium text-muted hover:text-primary transition-colors rounded-lg hover:bg-surface-soft">Skills</a></li>
+        <li><a href="#projects" class="px-3 py-2 text-sm font-medium text-muted hover:text-primary transition-colors rounded-lg hover:bg-surface-soft">Projects</a></li>
+        <li><a href="#contact" class="px-8 py-2.5 text-sm font-medium text-white bg-primary hover:bg-primary-active transition-colors rounded-lg ml-2">Connect</a></li>
+      </ul>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-hairline bg-canvas">
+      <ul class="px-6 py-4 space-y-1">
+        <li><a href="#hero" class="block py-3 text-muted hover:text-primary hover:bg-surface-soft rounded-lg px-3 -mx-3 transition-colors">Home</a></li>
+        <li><a href="#about" class="block py-3 text-muted hover:text-primary hover:bg-surface-soft rounded-lg px-3 -mx-3 transition-colors">About</a></li>
+        <li><a href="#experience" class="block py-3 text-muted hover:text-primary hover:bg-surface-soft rounded-lg px-3 -mx-3 transition-colors">Experience</a></li>
+        <li><a href="#skills" class="block py-3 text-muted hover:text-primary hover:bg-surface-soft rounded-lg px-3 -mx-3 transition-colors">Skills</a></li>
+        <li><a href="#projects" class="block py-3 text-muted hover:text-primary hover:bg-surface-soft rounded-lg px-3 -mx-3 transition-colors">Projects</a></li>
+        <li><a href="#contact" class="block py-3 text-muted hover:text-primary hover:bg-surface-soft rounded-lg px-3 -mx-3 transition-colors">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="relative min-h-screen flex items-center px-6 py-24 overflow-hidden">
+      <div class="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="text-sm font-medium text-primary tracking-widest uppercase mb-4">Staff Software Engineer</p>
+          <h1 class="text-5xl md:text-7xl font-display font-medium text-ink tracking-tightest mb-6">
+            Vishal Gupta
+          </h1>
+          <p class="text-lg md:text-xl text-body max-w-xl leading-relaxed mb-8">
+            Experienced Staff Software Developer specializing in Android and cloud applications. Building secure identity solutions at CyberArk with expertise in mobile security, threat modeling, and IAM.
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="#projects" class="inline-flex items-center gap-2 px-8 py-3 bg-primary text-white font-medium rounded-lg hover:bg-primary-active transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50">
+              View Projects
+              <i data-lucide="arrow-down" class="w-4 h-4"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/vishalguptahmh/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-3 bg-canvas text-ink font-medium rounded-lg border border-hairline hover:bg-surface-soft transition-colors focus:outline-none focus:ring-2 focus:ring-primary/50">
+              LinkedIn
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="rounded-xl bg-surface-dark p-6 border border-surface-dark-elev overflow-hidden">
+          <div class="flex items-center justify-between mb-4 pb-3 border-b border-surface-dark-elev">
+            <div class="flex items-center gap-2">
+              <div class="w-3 h-3 rounded-full bg-primary/40"></div>
+              <div class="w-3 h-3 rounded-full bg-accent-teal/40"></div>
+              <div class="w-3 h-3 rounded-full bg-success/40"></div>
+            </div>
+            <span class="text-xs font-mono text-on-dark-soft">MainActivity.kt</span>
+          </div>
+          <div class="font-mono text-sm text-on-dark space-y-1 overflow-x-auto">
+            <div><span class="text-primary">class</span> <span class="text-accent-teal">MainActivity</span> : <span class="text-on-dark">AppCompatActivity</span>() {</div>
+            <div class="pl-4"><span class="text-primary">override fun</span> <span class="text-accent-teal">onCreate</span>(</div>
+            <div class="pl-8">savedInstanceState: Bundle?</div>
+            <div class="pl-4">) {</div>
+            <div class="pl-8"><span class="text-primary">super</span>.onCreate(savedInstanceState)</div>
+            <div class="pl-8">setContentView(R.layout.activity_main)</div>
+            <div class="pl-8 text-on-dark-soft">// Building secure solutions</div>
+            <div class="pl-4">}</div>
+            <div>}</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 bg-surface-card border-y border-hairline">
+      <div class="max-w-3xl mx-auto">
+        <span class="text-xs font-semibold text-primary tracking-widest uppercase">About</span>
+        <h2 class="text-4xl md:text-5xl font-display font-medium text-ink mt-2 mb-8 tracking-tightest">Professional Summary</h2>
+        <p class="text-body text-lg leading-relaxed mb-6">
+          Experienced Staff Software Developer specializing in Android and cloud applications with proven ability to resolve critical customer issues, manage scrum activities, and deliver high-quality software.
+        </p>
+        <p class="text-body text-lg leading-relaxed">
+          Developed multiple Android apps across e-commerce, health, and security domains. Currently working on IAM products at CyberArk, with deep expertise in <span class="text-primary font-medium">mobile security</span>, <span class="text-primary font-medium">threat modeling</span>, and <span class="text-primary font-medium">identity solutions</span>. Built threat models identifying and fixing 15+ critical vulnerabilities, strengthening application security across the platform.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience" class="py-24 px-6">
+      <div class="max-w-4xl mx-auto">
+        <span class="text-xs font-semibold text-primary tracking-widest uppercase">Career</span>
+        <h2 class="text-4xl md:text-5xl font-display font-medium text-ink mt-2 mb-16 tracking-tightest">Experience</h2>
+        
+        <div class="space-y-12">
+          <article class="relative pl-8 border-l-2 border-hairline">
+            <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-primary"></div>
+            <div class="pb-8">
+              <div class="flex flex-wrap items-baseline gap-x-4 gap-y-2 mb-4">
+                <h3 class="text-2xl font-display font-medium text-ink tracking-tight">Staff Software Engineer, R&D</h3>
+                <span class="text-sm font-medium text-primary">Nov 2019 – Present</span>
+              </div>
+              <p class="text-lg text-muted mb-4">CyberArk Software (India) Private Ltd, Hyderabad</p>
+              <ul class="space-y-2 text-body">
+                <li class="flex gap-3"><span class="text-primary mt-1.5">•</span><span>Designed and developed Android/iOS identity applications with supporting backend services; managed deployments to Play Store and App Store</span></li>
+                <li class="flex gap-3"><span class="text-primary mt-1.5">•</span><span>Handle P0 customer tickets, ensuring quick issue resolution and manage Scrum activities as Scrum Master</span></li>
+                <li class="flex gap-3"><span class="text-primary mt-1.5">•</span><span>Built threat models, identifying & fixing 15+ critical vulnerabilities, strengthening app security</span></li>
+                <li class="flex gap-3"><span class="text-primary mt-1.5">•</span><span>Lead mobile architecture & design discussions, code reviews, and CI/CD integration with Jenkins</span></li>
+                <li class="flex gap-3"><span class="text-primary mt-1.5">•</span><span>Created Datadog dashboards & monitors, enabling proactive issue detection</span></li>
+                <li class="flex gap-3"><span class="text-primary mt-1.5">•</span><span>APJ Spotlight Award Winner FY 2021</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="relative pl-8 border-l-2 border-hairline">
+            <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-surface-card border-2 border-primary"></div>
+            <div class="pb-8">
+              <div class="flex flex-wrap items-baseline gap-x-4 gap-y-2 mb-4">
+                <h3 class="text-2xl font-display font-medium text-ink tracking-tight">Senior Software Developer</h3>
+                <span class="text-sm font-medium text-primary">June 2018 – Nov 2019</span>
+              </div>
+              <p class="text-lg text-muted mb-4">Talentopedia, Gurugram</p>
+              <ul class="space-y-2 text-body">
+                <li class="flex gap-3"><span class="text-primary mt-1.5">•</span><span>Developed and launched Android app from scratch, implementing modern architecture (MVVM, Dagger2, Retrofit, RxJava)</span></li>
+                <li class="flex gap-3"><span class="text-primary mt-1.5">•</span><span>Designed complete architecture, reducing load time by 30% and improving app stability</span></li>
+                <li class="flex gap-3"><span class="text-primary mt-1.5">•</span><span>Integrated Mixpanel analytics, enabling data-driven insights and boosting user engagement by 40%</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="relative pl-8 border-l-2 border-hairline">
+            <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-surface-card border-2 border-primary"></div>
+            <div class="pb-8">
+              <div class="flex flex-wrap items-baseline gap-x-4 gap-y-2 mb-4">
+                <h3 class="text-2xl font-display font-medium text-ink tracking-tight">Android Developer</h3>
+                <span class="text-sm font-medium text-primary">Jan 2017 – June 2018</span>
+              </div>
+              <p class="text-lg text-muted mb-4">Charpixel Technologies, Noida</p>
+              <ul class="space-y-2 text-body">
+                <li class="flex gap-3"><span class="text-primary mt-1.5">•</span><span>KidCircle: Developed profile management & booking flow with Google Payment Gateway integration</span></li>
+                <li class="flex gap-3"><span class="text-primary mt-1.5">•</span><span>Medrexa: Built task management & appointment features, improving user engagement by 30%</span></li>
+                <li class="flex gap-3"><span class="text-primary mt-1.5">•</span><span>Cryptongy: Designed crypto trading app with MVP architecture and real-time API integration</span></li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="relative pl-8 border-l-2 border-hairline">
+            <div class="absolute -left-2 top-0 w-4 h-4 rounded-full bg-surface-card border-2 border-primary"></div>
+            <div>
+              <div class="flex flex-wrap items-baseline gap-x-4 gap-y-2 mb-4">
+                <h3 class="text-2xl font-display font-medium text-ink tracking-tight">Co-Founder and CTO</h3>
+                <span class="text-sm font-medium text-primary">May 2016 – Nov 2017</span>
+              </div>
+              <p class="text-lg text-muted mb-4">SabjiStore.in, Dehradun</p>
+              <ul class="space-y-2 text-body">
+                <li class="flex gap-3"><span class="text-primary mt-1.5">•</span><span>Co-founded and led development of online grocery delivery platform</span></li>
+                <li class="flex gap-3"><span class="text-primary mt-1.5">•</span><span>Built and deployed Android app and backend for inventory, order tracking, and payments</span></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-24 px-6 bg-surface-card border-y border-hairline">
+      <div class="max-w-6xl mx-auto">
+        <span class="text-xs font-semibold text-primary tracking-widest uppercase">Expertise</span>
+        <h2 class="text-4xl md:text-5xl font-display font-medium text-ink mt-2 mb-16 tracking-tightest">Skills & Technologies</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="p-8 rounded-xl bg-canvas border border-hairline">
+            <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
+              <i data-lucide="code-2" class="w-6 h-6 text-primary"></i>
+            </div>
+            <h3 class="text-xl font-display font-medium text-ink mb-4 tracking-tight">Languages</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Kotlin</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Java</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">JavaScript</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">TypeScript</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Python</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Swift</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Groovy</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">C#</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">SQL</span>
+            </div>
+          </div>
+
+          <div class="p-8 rounded-xl bg-canvas border border-hairline">
+            <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
+              <i data-lucide="layers" class="w-6 h-6 text-primary"></i>
+            </div>
+            <h3 class="text-xl font-display font-medium text-ink mb-4 tracking-tight">Frameworks & Architecture</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">MVVM</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">MVP</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Jetpack Compose</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Dagger2</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Hilt</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">RxJava</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Coroutines</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Retrofit</span>
+            </div>
+          </div>
+
+          <div class="p-8 rounded-xl bg-canvas border border-hairline">
+            <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
+              <i data-lucide="smartphone" class="w-6 h-6 text-primary"></i>
+            </div>
+            <h3 class="text-xl font-display font-medium text-ink mb-4 tracking-tight">Mobile Development</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Android</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">iOS</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Android Enterprise</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">MDM</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">FCM</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Room</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">JUnit</span>
+            </div>
+          </div>
+
+          <div class="p-8 rounded-xl bg-canvas border border-hairline">
+            <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
+              <i data-lucide="cloud" class="w-6 h-6 text-primary"></i>
+            </div>
+            <h3 class="text-xl font-display font-medium text-ink mb-4 tracking-tight">Web & Cloud</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">HTML</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Node.js</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">MongoDB</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">AWS EC2</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">AWS S3</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">CloudWatch</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">IAM</span>
+            </div>
+          </div>
+
+          <div class="p-8 rounded-xl bg-canvas border border-hairline">
+            <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
+              <i data-lucide="shield-check" class="w-6 h-6 text-primary"></i>
+            </div>
+            <h3 class="text-xl font-display font-medium text-ink mb-4 tracking-tight">Security & Analysis</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Threat Modeling</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">OWASP Top 10</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Burp Suite</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">NMAP</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Checkmarx</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Snyk</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">SonarQube</span>
+            </div>
+          </div>
+
+          <div class="p-8 rounded-xl bg-canvas border border-hairline">
+            <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
+              <i data-lucide="git-branch" class="w-6 h-6 text-primary"></i>
+            </div>
+            <h3 class="text-xl font-display font-medium text-ink mb-4 tracking-tight">Tools & DevOps</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Git</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Jenkins</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">CI/CD</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">JIRA</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Confluence</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">DataDog</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">MySQL</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="p-8 rounded-xl bg-canvas border border-hairline md:col-span-2 lg:col-span-1">
+            <div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-5">
+              <i data-lucide="pen-tool" class="w-6 h-6 text-primary"></i>
+            </div>
+            <h3 class="text-xl font-display font-medium text-ink mb-4 tracking-tight">Design & Prototyping</h3>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Figma</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Sketch</span>
+              <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Wireframing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-24 px-6">
+      <div class="max-w-6xl mx-auto">
+        <span class="text-xs font-semibold text-primary tracking-widest uppercase">Portfolio</span>
+        <h2 class="text-4xl md:text-5xl font-display font-medium text-ink mt-2 mb-16 tracking-tightest">Featured Projects</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="group rounded-xl overflow-hidden bg-canvas border border-hairline hover:border-primary/30 transition-all">
+            <a href="https://github.com/vishalguptahmh/Android-Cheat-Sheet" target="_blank" rel="noopener noreferrer" class="block">
+              <div class="relative h-52 overflow-hidden bg-surface-card">
+                <img src="https://placehold.co/600x320/efe9de/cc785c?text=Android" alt="Android Cheat Sheet" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+                  <span class="text-muted text-xs font-medium">Open source</span>
+                  <i data-lucide="external-link" class="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-display font-medium text-ink mb-3 group-hover:text-primary transition-colors tracking-tight">Android Cheat Sheet</h3>
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Kotlin</span>
+                  <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Android</span>
+                  <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Gradle</span>
+                </div>
+                <p class="text-muted text-sm leading-relaxed">Android helping snippets and development shortcuts.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group rounded-xl overflow-hidden bg-canvas border border-hairline hover:border-primary/30 transition-all">
+            <a href="https://github.com/vishalguptahmh/web_ideabox" target="_blank" rel="noopener noreferrer" class="block">
+              <div class="relative h-52 overflow-hidden bg-surface-card">
+                <img src="https://placehold.co/600x320/efe9de/cc785c?text=Idea+Box" alt="Idea Box" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+                  <span class="text-muted text-xs font-medium">Web app</span>
+                  <i data-lucide="external-link" class="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-display font-medium text-ink mb-3 group-hover:text-primary transition-colors tracking-tight">Idea Box</h3>
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">JavaScript</span>
+                  <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Web</span>
+                </div>
+                <p class="text-muted text-sm leading-relaxed">Web app for capturing and organizing ideas.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="group rounded-xl overflow-hidden bg-canvas border border-hairline hover:border-primary/30 transition-all">
+            <a href="https://github.com/vishalguptahmh/knowledgeBase" target="_blank" rel="noopener noreferrer" class="block">
+              <div class="relative h-52 overflow-hidden bg-surface-card">
+                <img src="https://placehold.co/600x320/efe9de/cc785c?text=Knowledge+Base" alt="Knowledge Base" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                <div class="absolute bottom-4 left-4 right-4 flex justify-between items-end">
+                  <span class="text-muted text-xs font-medium">Resource hub</span>
+                  <i data-lucide="external-link" class="w-4 h-4 text-primary opacity-0 group-hover:opacity-100 transition-opacity"></i>
+                </div>
+              </div>
+              <div class="p-6">
+                <h3 class="text-xl font-display font-medium text-ink mb-3 group-hover:text-primary transition-colors tracking-tight">Knowledge Base</h3>
+                <div class="flex flex-wrap gap-2 mb-3">
+                  <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Architecture</span>
+                  <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">AI</span>
+                  <span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20">Cloud</span>
+                </div>
+                <p class="text-muted text-sm leading-relaxed">Amazon, Cloud, AI, Clean Architecture, HLD, LLD resources.</p>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="mt-20 pt-16 border-t border-hairline">
+          <h3 class="text-2xl font-display font-medium text-ink mb-8 tracking-tight">More Projects & Demos</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div>
+              <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-4">Android</p>
+              <ul class="space-y-3">
+                <li><a href="https://github.com/vishalguptahmh/gradle-things" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary transition-colors text-sm flex items-center gap-2"><i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0"></i>Gradle snippets</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.moode&hl=en_IN" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary transition-colors text-sm flex items-center gap-2"><i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0"></i>Talentopedia App</a></li>
+                <li><a href="https://github.com/vishalguptahmh/android_sdk_sample" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary transition-colors text-sm flex items-center gap-2"><i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0"></i>Android SDK sample</a></li>
+                <li><a href="https://github.com/vishalguptahmh/GeneralSoftwareHelp" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary transition-colors text-sm flex items-center gap-2"><i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0"></i>General Software help</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-4">Web</p>
+              <ul class="space-y-3">
+                <li><a href="https://github.com/vishalguptahmh/web-developer-cheatsheet" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary transition-colors text-sm flex items-center gap-2"><i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0"></i>Web cheatsheet</a></li>
+                <li><a href="https://playstorefetch.herokuapp.com/" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary transition-colors text-sm flex items-center gap-2"><i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0"></i>Play Store API</a></li>
+                <li><a href="https://vishalguptahmh.github.io/web-demo2-animation" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary transition-colors text-sm flex items-center gap-2"><i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0"></i>Web animation – card layout</a></li>
+                <li><a href="https://vishalguptahmh.github.io/web-animation-demo3/" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary transition-colors text-sm flex items-center gap-2"><i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0"></i>Web animation – blur</a></li>
+                <li><a href="https://vishalguptahmh.github.io/demo1" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary transition-colors text-sm flex items-center gap-2"><i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0"></i>Website demo</a></li>
+                <li><a href="https://github.com/vishalguptahmh/Angular" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary transition-colors text-sm flex items-center gap-2"><i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0"></i>Angular</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-4">iOS</p>
+              <ul class="space-y-3">
+                <li><a href="https://github.com/vishalguptahmh/ios_cheat_sheet" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary transition-colors text-sm flex items-center gap-2"><i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0"></i>iOS helping snippets</a></li>
+              </ul>
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-primary uppercase tracking-widest mb-4">Tools & Resources</p>
+              <ul class="space-y-3">
+                <li><a href="https://github.com/vishalguptahmh/Regex-RegularExpression/blob/main/README.md" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary transition-colors text-sm flex items-center gap-2"><i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0"></i>Regex guide</a></li>
+                <li><a href="https://github.com/vishalguptahmh/githelper" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary transition-colors text-sm flex items-center gap-2"><i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0"></i>Git Helper</a></li>
+                <li><a href="https://github.com/vishalguptahmh/Powershell-helper" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary transition-colors text-sm flex items-center gap-2"><i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0"></i>PowerShell helper</a></li>
+                <li><a href="https://github.com/vishalguptahmh/datastructure" target="_blank" rel="noopener noreferrer" class="text-muted hover:text-primary transition-colors text-sm flex items-center gap-2"><i data-lucide="external-link" class="w-3.5 h-3.5 shrink-0"></i>Data structures</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="py-24 px-6 bg-surface-card border-y border-hairline">
+      <div class="max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div>
+            <span class="text-xs font-semibold text-primary tracking-widest uppercase">Credentials</span>
+            <h2 class="text-4xl md:text-5xl font-display font-medium text-ink mt-2 mb-8 tracking-tightest">Certifications</h2>
+            <ul class="space-y-3">
+              <li class="flex gap-3"><span class="text-primary mt-1">•</span><span class="text-body">Certified Information Security Specialist V2.0</span></li>
+              <li class="flex gap-3"><span class="text-primary mt-1">•</span><span class="text-body">CyberArk R&D Security Champion</span></li>
+              <li class="flex gap-3"><span class="text-primary mt-1">•</span><span class="text-body">Identity Security Training</span></li>
+              <li class="flex gap-3"><span class="text-primary mt-1">•</span><span class="text-body">Scrum Master by CyberArk</span></li>
+              <li class="flex gap-3"><span class="text-primary mt-1">•</span><span class="text-body">OWASP Top 10</span></li>
+              <li class="flex gap-3"><span class="text-primary mt-1">•</span><span class="text-body">Core Java & Advanced Java at RCPL</span></li>
+              <li class="flex gap-3"><span class="text-primary mt-1">•</span><span class="text-body">Cambridge English Entry Level Certificate in ESOL International</span></li>
+            </ul>
+          </div>
+          
+          <div>
+            <span class="text-xs font-semibold text-primary tracking-widest uppercase">Education</span>
+            <h2 class="text-4xl md:text-5xl font-display font-medium text-ink mt-2 mb-8 tracking-tightest">Academic Background</h2>
+            <div class="p-6 rounded-xl bg-canvas border border-hairline">
+              <h3 class="text-xl font-display font-medium text-ink mb-2 tracking-tight">Bachelor of Technology</h3>
+              <p class="text-lg text-body mb-2">Computer Science</p>
+              <p class="text-muted">DIT University, Dehradun</p>
+              <p class="text-sm text-muted-soft mt-2">May 2013 – May 2017</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 px-6 bg-primary">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl md:text-5xl font-display font-medium text-white mb-6 tracking-tightest">Let's Build Something Together</h2>
+        <p class="text-lg text-white/90 mb-8 max-w-2xl mx-auto">
+          Interested in collaborating on mobile, security, or cloud projects? Let's connect and create something impactful.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="https://www.linkedin.com/in/vishalguptahmh/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-8 py-3 bg-canvas text-ink font-medium rounded-lg hover:bg-surface-soft transition-colors focus:outline-none focus:ring-2 focus:ring-canvas/50">
+            LinkedIn
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+          <a href="mailto:vishalguptacybersec@gmail.com" class="inline-flex items-center gap-2 px-8 py-3 bg-canvas text-ink font-medium rounded-lg hover:bg-surface-soft transition-colors focus:outline-none focus:ring-2 focus:ring-canvas/50">
+            Email Me
+            <i data-lucide="mail" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-16 px-6 bg-surface-dark border-t border-surface-dark-elev">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+          <div class="flex items-center gap-3">
+            <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="text-on-dark">
+              <path d="M8 0L8 16M0 8L16 8M3.5 3.5L12.5 12.5M12.5 3.5L3.5 12.5" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+            <span class="text-lg font-medium text-on-dark">Vishal Gupta</span>
+          </div>
+          
+          <div class="flex flex-wrap items-center gap-6">
+            <a href="https://www.linkedin.com/in/vishalguptahmh/" target="_blank" rel="noopener noreferrer" class="text-on-dark-soft hover:text-primary transition-colors text-sm font-medium">LinkedIn</a>
+            <a href="https://github.com/vishalguptahmh" target="_blank" rel="noopener noreferrer" class="text-on-dark-soft hover:text-primary transition-colors text-sm font-medium">GitHub</a>
+            <a href="mailto:vishalguptacybersec@gmail.com" class="text-on-dark-soft hover:text-primary transition-colors text-sm font-medium">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-8 px-6 bg-surface-dark border-t border-surface-dark-elev">
+    <div class="max-w-6xl mx-auto text-center">
+      <p class="text-on-dark-soft text-sm">© 2026 Vishal Gupta. Built with the Claude design system.</p>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navLinks = document.querySelectorAll('#mobile-menu a');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      const icon = menuToggle.querySelector('i');
+      const isOpen = !mobileMenu.classList.contains('hidden');
+      icon.setAttribute('data-lucide', isOpen ? 'x' : 'menu');
+      lucide.createIcons();
+    });
+
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        const icon = menuToggle.querySelector('i');
+        icon.setAttribute('data-lucide', 'menu');
+        lucide.createIcons();
+      });
+    });
+  </script>
+</body>
+</html>
